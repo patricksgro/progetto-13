@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    background-color: rgb(252, 248, 203);
+    padding: 2%; 
+}
+
+main div:first-child {
+    flex: 0 0 auto; 
+    margin-right: 10px;
+}
+
+
+main div:last-child {
+    flex: 1 1 400px; 
+    min-width: 320px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1090px) {
+    main div:first-child {
+        order: 1;
+    }
+}
